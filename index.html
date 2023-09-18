@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <style>
+        /* Reset some default browser styles */
+body, h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 12px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('');
+}
+
+/* Header styles */
+header {
+    font-size: 13px;
+    background-color:black;
+    color: #FFD700;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+span{
+    color:white;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About, Menu, and Contact section styles */
+.about, .menu, .contact {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color:#FFDF00;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #FFD700;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 70px;
+    max-width: 800px;
+}
+
+.card {
+    background-color:#FFDF00;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+    margin-top: 70px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:black;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    border-radius: 5px; /* Optional: add rounded corners to the image */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>Ambey </span>Fast Food & Bakers</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Restaurant</h1>
+        <p>Discover a world of delicious flavors.</p>
+        <a href="#menu" class="cta-button">View Menu</a>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Recommened</h2>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <a href="index.html">
+                <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/intro-1645057933.webp" alt="Menu Image">
+                <h3>Indian Food</h3>
+                <p>Explore our delicious dishes.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="chinese.html">
+                <img src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50" alt="Reservation Image">
+                <h3>Chinese Food</h3>
+                <p>Explore our delicious dishes.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="chinese.html">
+                <img src="https://static.toiimg.com/photo/95665037.cms" alt="Reservation Image">
+                <h3>Fast Food</h3>
+                <p>Explore our delicious dishes.</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="juice.html">
+                <img src="" alt="Reservation Image">
+                <h3>Juice & Coffee</h3>
+                <p>Explore our delicious dishes.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <br>
+        <br>
+        <p>
+            At Ambey fast Food & Brakers, our story is one of passion and flavor. Established in 2021, we've been serving culinary delights inspired by both tradition and innovation. Our dedicated team of chefs brings a wealth of experience and creativity to the kitchen, crafting dishes that tantalize your taste buds.
+            
+            We take pride in sourcing the finest, locally-sourced ingredients to ensure every dish is a masterpiece of freshness and quality. Our warm and welcoming ambiance is designed to create memorable dining experiences, whether it's a romantic evening for two or a gathering of friends and family.
+            
+            We are committed to providing impeccable service, with a focus on your comfort and satisfaction. It's our mission to transport you on a culinary journey, leaving you with delightful memories and a longing to return.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <br>
+        <br>
+        <p>Station Road, Station Road, Ashoknagar - 473331 Near Vivek Takij</p>
+        <p>Email: info@myrestaurant.com</p>
+        <p>Phone: 07419590788</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Restaurant</p>
+    </footer>
+</body>
+</html>
