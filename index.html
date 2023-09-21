@@ -306,5 +306,56 @@ form button:hover {
         <p>&copy; 2023 Ambey Fast Food & Baker's</p>
         <p>Designed by Yashk</p>
     </footer>
+
+     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyAP5iPq_1dvbPQVkvmoVXcps6LhEX5rWQ4",
+    authDomain: "feedback-52db5.firebaseapp.com",
+    databaseURL: "https://feedback-52db5-default-rtdb.firebaseio.com",
+    projectId: "feedback-52db5",
+    storageBucket: "feedback-52db5.appspot.com",
+    messagingSenderId: "871103731307",
+    appId: "1:871103731307:web:866dc43df2e54acb95832e",
+    measurementId: "G-35Y8ZLQXZG"
+  };
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Reference to Firebase Firestore
+const db = firebase.firestore();
+
+const feedbackForm = document.getElementById('feedback-form');
+
+feedbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Add feedback data to Firestore
+    db.collection('feedback').add({
+        name: name,
+        email: email,
+        message: message,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(() => {
+        // Feedback successfully submitted
+        alert('Thank you for your feedback!');
+        feedbackForm.reset();
+    })
+    .catch((error) => {
+        console.error('Error adding feedback: ', error);
+    });
+});
+
+    </script>
 </body>
 </html>
