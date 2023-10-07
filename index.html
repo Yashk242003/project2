@@ -9,22 +9,24 @@
 body{
     margin: 0;
     padding: 0;
+   /* font-size: 20px;  */
 }
 h1{
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 20px;
 }
 h2{
     margin: 0;
-    padding: 10px;
-    font-size: 15px;
+    padding: 0;
+    font-size: 17px;
 }
 h3{
-   font-size: 15px;
+    font-size: 20px;
 }
+
 p{
-    font-size: 11px;
+    font-size: 12px;
 
 }
 
@@ -35,10 +37,10 @@ body {
 
 /* Header styles */
 header {
-    font-size: 9px;
+    font-size: 13px;
     background-color:black;
     color: #FFD700;
-    padding: 5px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +84,7 @@ nav a:hover{
 }
 
 .hero h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -93,7 +95,7 @@ nav a:hover{
 
 .cta-button {
     display: inline-block;
-    background-color: #FFD700;
+    background-color: #FFDF00;
     color: black;
     padding: 5px 10px;
     border-radius: 5px;
@@ -103,11 +105,19 @@ nav a:hover{
 }
 
 /* About, Menu, and Contact section styles */
-.about, .menu, .contact {
-    margin-top: 20px;
-    padding: 9px;
+.about, .menu {
+    margin-top: 30px;
+    padding: 20px;
     text-align: center;
-    background-color:#FFD700;
+    background-color: #FFE500;
+    border-radius: 0px ;
+}
+
+.contact {
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+    background-color: #FFE500;
 }
 
 /* Footer styles */
@@ -123,16 +133,16 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    padding: 70px;
+    padding: 90px;
     max-width: 800px;
 }
 .card {
     background-color:#FFDF00;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 45%;
-    margin-top: 80px;
-    transition: transform 0.2s;
+    border-radius: 0px 0px 10px 10px;
+    width: 40%;
+    margin-top: 37px;
+    transition: transform 0.3s;
 }
 
 .card:hover {
@@ -148,34 +158,24 @@ footer {
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 10px;
+    padding: 20px;
     color: black;
 }
 
 .card img {
     max-width: 100%; /* Ensure the image fits within the card */
-    border-radius: 10px 10px 40px 40px; /* Optional: add rounded corners to the image */
+    border-radius: 0px 0px 40px 40px; /* Optional: add rounded corners to the image */
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
 
-body{
-    margin: 0;
-    padding: 0;
-}
-h1{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-}
-h2{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-}
+    .hero h1{
+        font-size: 30px;
+    }
     .cards {
         flex-direction: column;
     }
@@ -183,7 +183,9 @@ h2{
     .card {
         width: 100%;
     }
+
 }
+
 
 .container {
     margin: 70px;
@@ -234,6 +236,7 @@ form button:hover {
 .veg{
 padding: 20px;
 }
+
 
     </style>
 </head>
